@@ -31,28 +31,29 @@ npm install
 npm run dev
 
 Your portfolio will run on: http://localhost:5173
+```
 
-✨ Features
+## ✨ Features
 
-Modern and responsive UI
+- Modern and responsive UI
 
-Animated components
+- Animated components
 
-Interactive AI-style chat widget
+- Interactive AI-style chat widget
 
-Showcases all major AI/ML projects (CV, NLP, ML)
+- Showcases all major AI/ML projects (CV, NLP, ML)
 
-Clean codebase with reusable components
+- Clean codebase with reusable components
 
-Optimized with Vite for fast performance
+- Optimized with Vite for fast performance
 
-🌍 Deployment
+## 🌍 Deployment
 
 This portfolio is deployed on Vercel for best performance.
 
 Link : https://jonathanalvios-portfolio.vercel.app/
 
-📬 Contact
+## 📬 Contact
 
 Email: alviosboen@gmail.com
 
