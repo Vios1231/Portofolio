@@ -5,20 +5,121 @@ type Msg = { id: string; from: 'user' | 'bot'; text: string }
 
 const KNOWLEDGE = [
   {
-    q: ['skills', 'what do you know', 'tech stack', 'technologies', 'tools'],
-    a: 'Core tech: Python, TensorFlow, PyTorch, Scikit-learn, Pandas, SQL, Streamlit, Flask, NLTK, spaCy. Soft skills: Problem Solving, Communication, Teamwork, Creativity.'
+    q: [
+      "skill", "skills", "tech stack", "tools", "tech", "what can you do",
+      "technology", "technologies", "stacks", "stack"
+    ],
+    a: `Here are Jonathan's main skills:
+
+**AI / Machine Learning**
+• Python, TensorFlow, PyTorch  
+• Scikit-learn, Numpy, Tensorflow  
+• Computer Vision (OpenCV, CNN)  
+• NLP (NLTK, spaCy, Transformers)
+
+**Data**
+• Pandas, NumPy, SQL  
+• Data Cleaning, Feature Engineering  
+• Data Visualization (Matplotlib, Seaborn)
+
+**Backend**
+• Flask, FastAPI, Streamlit, Gradio 
+• REST API Development
+
+**Others**
+• Git, GitHub, Postman, Replit, Render, 
+• Problem Solving, Communication, Teamwork`
   },
   {
-    q: ['projects', 'showcase', 'portfolio'],
-    a: 'Highlighted projects: ScolioVis (scoliosis classification), SpamShield (spam detector with LSTM), FaceMe-AI (emotion recognition), LLM-Based Chatbot with RAG.'
+    q: [
+      "project", "projects", "portfolio", "showcase", "work", "build",
+      "case study", "case studies", "examples"
+    ],
+    a: `Highlighted Projects:
+
+🎯 **ScolioVis** — CNN-based scoliosis classification.  
+📨 **SpamShield** — Email spam detector using LSTM.  
+🙂 **FaceMe AI** — Emotion recognition with CNN.  
+🤖 **LLM Chatbot with RAG** — Document-augmented chatbot prototype.  
+🛒 **Food Review Sentiment System** — NLP + TF-IDF + Cosine similarity for restaurant recommendation.  
+🎮 **Duallies Game Logic** — Game architecture & AI helper for logic simulation.`
   },
   {
-    q: ['contact', 'hire', 'email', 'reach'],
-    a: 'Email: alviosboen@gmail.com. LinkedIn: /in/jonathan-alvios-739801258/. GitHub: github.com/Vios1231.'
+    q: [
+      "education", "school", "study", "kuliah", "college", "university", "background"
+    ],
+    a: `Jonathan is pursuing a degree in Computer Science with a strong focus on:
+• Artificial Intelligence  
+• Aspiring Data Analyst/Science
+• Machine Learning Engineering
+• Deep Learning Models, Computer Vision, NLP
+He has completed multiple AI/ML courses and independent projects.`
   },
   {
-    q: ['about', 'bio', 'who are you'],
-    a: 'I’m Jonathan Alvios, an aspiring AI Engineer & Data Analyst focused on NLP, CV, and applied machine learning.'
+    q: [
+      "experience", "work experience", "internship", "job", "career"
+    ],
+    a: `Jonathan has hands-on experience building AI and data solutions including:
+• NLP sentiment analysis systems  
+• CV classification models  
+• Chatbots with custom embeddings  
+• Backend API development  
+He is actively seeking AI Engineer / Data roles.`
+  },
+  {
+    q: [
+      "achievements", "awards", "certificates", "certification", "prestasi"
+    ],
+    a: `Some of Jonathan's notable achievements:
+• Built multiple ML systems from scratch  
+• Completed several AI specializations  
+• Contributed to various open-source ML experiments  
+• Strong portfolio demonstrating real applied AI work`
+  },
+  {
+    q: [
+      "service", "services", "offer", "hire you for", "what can you do for me",
+      "freelance", "job role", "roles"
+    ],
+    a: `Jonathan can help with:
+• Machine Learning model development  
+• NLP (Classification, RAG, Embeddings, Chatbots)  
+• Computer Vision (Detection, Classification)  
+• Data Analysis & dashboards  
+• Backend/API for ML apps  
+• AI project consulting`
+  },
+  {
+    q: [
+      "hobby", "hobbies", "interest", "interests"
+    ],
+    a: `Jonathan enjoys:  
+• Learning AI & ML advancements  
+• Experimenting with new tech  
+• Gaming & music  
+• Building personal projects`
+  },
+  {
+    q: [
+      "contact", "hire", "email", "reach", "connect", "linkedin", "github",
+      "social", "talk", "message"
+    ],
+    a: `You can contact Jonathan here:
+
+📧 Email — **alviosboen@gmail.com**  
+💼 LinkedIn — **linkedin.com/in/jonathan-alvios-739801258**  
+💻 GitHub — **github.com/Vios1231**
+
+He's open for collaborations and opportunities!`
+  },
+  {
+    q: ["about", "bio", "who are you", "who is jonathan", "about jonathan"],
+    a: `Jonathan Alvios is an aspiring AI Engineer & Data Analyst focused on:
+• NLP  
+• Computer Vision  
+• Machine Learning Enthusiasts
+• AI-Related  
+Passionate about building AI tools that solve real problems.`
   }
 ]
 
