@@ -29,3 +29,14 @@ Thumbs.db
 # Optional cache
 .cache/
 .eslintcache
+
+# Python
+__pycache__/
+*.pyc
+
+# Docker
+*.pid
+
+# Venv
+venv/
+.venv/
