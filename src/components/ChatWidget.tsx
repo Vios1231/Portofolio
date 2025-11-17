@@ -5,121 +5,60 @@ type Msg = { id: string; from: 'user' | 'bot'; text: string }
 
 const KNOWLEDGE = [
   {
-    q: [
-      "skill", "skills", "tech stack", "tools", "tech", "what can you do",
-      "technology", "technologies", "stacks", "stack"
-    ],
-    a: `Here are Jonathan's main skills:
-
-**AI / Machine Learning**
-• Python, TensorFlow, PyTorch  
-• Scikit-learn, Numpy, Tensorflow  
-• Computer Vision (OpenCV, CNN)  
-• NLP (NLTK, spaCy, Transformers)
-
-**Data**
-• Pandas, NumPy, SQL  
-• Data Cleaning, Feature Engineering  
-• Data Visualization (Matplotlib, Seaborn)
-
-**Backend**
-• Flask, FastAPI, Streamlit, Gradio 
-• REST API Development
-
-**Others**
-• Git, GitHub, Postman, Replit, Render, 
-• Problem Solving, Communication, Teamwork`
+    q: ["skill", "skills", "tech stack", "tools", "tech", "what can you do", "technology", "technologies", "stacks", "stack"],
+    a: `Jonathan's main skills include Python, TensorFlow, PyTorch, scikit-learn, NLP, computer vision, data analysis with Pandas and SQL, backend development with Flask and FastAPI, and familiarity with Git, GitHub, and Postman.`
   },
   {
-    q: [
-      "project", "projects", "portfolio", "showcase", "work", "build",
-      "case study", "case studies", "examples"
-    ],
-    a: `Highlighted Projects:
-
-🎯 **ScolioVis** — CNN-based scoliosis classification.  
-📨 **SpamShield** — Email spam detector using LSTM.  
-🙂 **FaceMe AI** — Emotion recognition with CNN.  
-🤖 **LLM Chatbot with RAG** — Document-augmented chatbot prototype.  
-🛒 **Food Review Sentiment System** — NLP + TF-IDF + Cosine similarity for restaurant recommendation.  
-🎮 **Duallies Game Logic** — Game architecture & AI helper for logic simulation.`
+    q: ["project", "projects", "portfolio", "showcase", "work", "build", "case study", "case studies", "examples"],
+    a: `Some highlighted projects are ScolioVis for scoliosis classification using CNN, SpamShield for LSTM-based spam detection, FaceMe AI for emotion recognition, an LLM chatbot with RAG, and a food review sentiment system using NLP and TF-IDF.`
   },
   {
-    q: [
-      "education", "school", "study", "kuliah", "college", "university", "background"
-    ],
-    a: `Jonathan is pursuing a degree in Computer Science with a strong focus on:
-• Artificial Intelligence  
-• Aspiring Data Analyst/Science
-• Machine Learning Engineering
-• Deep Learning Models, Computer Vision, NLP
-He has completed multiple AI/ML courses and independent projects.`
+    q: ["education", "school", "study", "kuliah", "college", "university", "background"],
+    a: `Jonathan is studying Computer Science with a focus on artificial intelligence, machine learning, deep learning, computer vision, and NLP.`
   },
   {
-    q: [
-      "experience", "work experience", "internship", "job", "career"
-    ],
-    a: `Jonathan has hands-on experience building AI and data solutions including:
-• NLP sentiment analysis systems  
-• CV classification models  
-• Chatbots with custom embeddings  
-• Backend API development  
-He is actively seeking AI Engineer / Data roles.`
+    q: ["experience", "work experience", "internship", "job", "career"],
+    a: `Jonathan has experience building NLP sentiment systems, computer vision classification models, RAG-based chatbots, and backend APIs, and is seeking opportunities in AI engineering or data-related roles.`
   },
   {
-    q: [
-      "achievements", "awards", "certificates", "certification", "prestasi"
-    ],
-    a: `Some of Jonathan's notable achievements:
-• Built multiple ML systems from scratch  
-• Completed several AI specializations  
-• Contributed to various open-source ML experiments  
-• Strong portfolio demonstrating real applied AI work`
+    q: ["achievements", "awards", "certificates", "certification", "prestasi"],
+    a: `Jonathan has built multiple machine learning models, completed various AI and ML learning programs, and developed a portfolio that demonstrates practical applied AI work.`
   },
   {
-    q: [
-      "service", "services", "offer", "hire you for", "what can you do for me",
-      "freelance", "job role", "roles"
-    ],
-    a: `Jonathan can help with:
-• Machine Learning model development  
-• NLP (Classification, RAG, Embeddings, Chatbots)  
-• Computer Vision (Detection, Classification)  
-• Data Analysis & dashboards  
-• Backend/API for ML apps  
-• AI project consulting`
+    q: ["service", "services", "offer", "hire you for", "what can you do for me", "freelance", "job role", "roles"],
+    a: `Jonathan offers machine learning model development, NLP and chatbot systems, computer vision classification, data analysis and dashboards, and backend or API development for ML applications.`
   },
   {
-    q: [
-      "hobby", "hobbies", "interest", "interests"
-    ],
-    a: `Jonathan enjoys:  
-• Learning AI & ML advancements  
-• Experimenting with new tech  
-• Gaming & music  
-• Building personal projects`
+    q: ["hobby", "hobbies", "interest", "interests"],
+    a: `Jonathan's interests include learning about AI and machine learning, exploring new technologies, gaming, music, and building personal projects.`
   },
   {
-    q: [
-      "contact", "hire", "email", "reach", "connect", "linkedin", "github",
-      "social", "talk", "message"
-    ],
-    a: `You can contact Jonathan here:
-
-📧 Email — **alviosboen@gmail.com**  
-💼 LinkedIn — **linkedin.com/in/jonathan-alvios-739801258**  
-💻 GitHub — **github.com/Vios1231**
-
-He's open for collaborations and opportunities!`
+    q: ["contact", "hire", "email", "reach", "connect", "linkedin", "github", "social", "talk", "message"],
+    a: `You can reach Jonathan via email at alviosboen@gmail.com, on LinkedIn at linkedin.com/in/jonathan-alvios-739801258, or on GitHub at github.com/Vios1231.`
   },
   {
     q: ["about", "bio", "who are you", "who is jonathan", "about jonathan"],
-    a: `Jonathan Alvios is an aspiring AI Engineer & Data Analyst focused on:
-• NLP  
-• Computer Vision  
-• Machine Learning Enthusiasts
-• AI-Related  
-Passionate about building AI tools that solve real problems.`
+    a: `Jonathan is an aspiring AI engineer and data analyst with interests in NLP, computer vision, and practical machine learning projects.`
+  },
+  {
+  q: ["scoliovis", "scolio vis", "scoliosis project", "scoliosis ai", "Scoliovis"],
+  a: `An AI model for early scoliosis detection using CNN and transfer learning (VGG16). Trained on 259 labeled X-ray images with preprocessing, augmentation, and class balancing. Achieved 90% accuracy, 88% precision, and 92% recall, providing an efficient diagnostic tool for scoliosis screening.`
+  },
+  {
+  q: ["spamshield", "spam shield", "spam detector", "email spam", "spam project", "Spamshield"],
+  a: `SpamShield is a machine learning project for automatic spam email detection. This project applies Natural Language Processing (NLP) techniques and supervised learning algorithms such as Logistic Regression, Linear SVC, Random Forest, XGBoost, and Naive Bayes to classify messages as spam or not spam.`
+  },
+  {
+  q: ["faceme", "faceme ai", "emotion recognition", "face emotion", "Faceme"],
+  a: `FaceMe AI is a CNN project aimed at distinguishing between real and AI-generated images (deepfake/GAN). The project includes preprocessing, augmentation, training, evaluation with accuracy, precision, recall, as well as Flask deployment so that users can upload images and get predictions automatically.`
+  },
+  {
+  q: ["rag", "llm chatbot", "rag chatbot", "document chatbot", "Rag"],
+  a: `The LLM Chatbot Project with RAG is a chatbot that can answer document-based questions using retrieval augmented generation with embedding and indexing.`
+  },
+  {
+  q: ["MediGenAI", "medi", "medigenAI", "Medigen AI", "medigen"],
+  a: `AI system that analyzes chest X-ray images using Vision Transformer (ViT) and generates professional medical reports with LLaMA. Built with Gradio for an interactive web interface and Grad-CAM visualization.`
   }
 ]
 
